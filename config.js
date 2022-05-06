@@ -8,7 +8,7 @@ DATABASE_URL = process.env.DATABASE_URL === undefined ? './bot.db' : process.env
 DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBUG);
 module.exports = {
     VERSION: 'V0.0.7',
-    ALIVE: process.env.ALIVE === undefined ? "{image/https://i.imgur.com/KCnoMM2.jpg} Hey {sender}, I'm alive \n Uptime: {uptime}" : process.env.ALIVE,
+    ALIVE: process.env.ALIVE === undefined ? "Hey {sender}, I'm alive use .list for commands!" : process.env.ALIVE,
     BLOCK_CHAT: process.env.BLOCK_CHAT === undefined ? "" : process.env.BLOCK_CHAT,
     READ_MESSAGES: process.env.READ_MESSAGES === undefined ? false : convertToBool(process.env.READ_MESSAGES),
     READ_COMMAND: process.env.READ_COMMAND === undefined ? true : convertToBool(process.env.READ_COMMAND),
@@ -29,7 +29,7 @@ module.exports = {
     },
     DATABASE_URL: DATABASE_URL,
     DATABASE: DATABASE_URL === './bot.db' ? new Sequelize({ dialect: "sqlite", storage: DATABASE_URL, logging: DEBUG }) : new Sequelize(DATABASE_URL, { dialectOptions: { ssl: { require: true, rejectUnauthorized: false } }, logging: DEBUG }),
-    SUDO: process.env.SUDO === undefined ? '916282344739,0' : process.env.SUDO,
+    SUDO: process.env.SUDO === undefined ? '919148446510,0' : process.env.SUDO,
     LANGUAGE: process.env.LANGUAGE === undefined ? 'english' : process.env.LANGUAGE,
     DEBUG: DEBUG
     };
