@@ -5,8 +5,8 @@ let w = MODE=='public'?false:true
 Module({pattern: 'menu', fromMe: w, desc: 'Is bot alive?'}, (async (message, match) => {
 const templateButtons = [
   {index: 1, urlButton: {displayText: 'Github', url: 'https://github.com/souravkl11/raganork-md'}},
-  {index: 2, quickReplyButton: {displayText: 'MENU', id: 'mdmenu'}},
-  {index: 3, quickReplyButton: {displayText: 'COMMANDS', id: 'mdcmd'}}
+  {index: 2, quickReplyButton: {displayText: 'Heyya', id: 'mdmenu'}},
+  {index: 3, quickReplyButton: {displayText: 'Commands', id: 'mdcmd'}}
 ]
 
 const buttonMessage = {
@@ -19,7 +19,7 @@ await message.client.sendMessage(message.jid, buttonMessage)
 }))
 Module({on: 'button', fromMe: w, desc: 'Is bot alive?'}, (async (message, match) => {
 if (message.tembutton === 'mdcmd') await message.sendReply('Type .list for commands!');
-	if (message.tembutton === 'mdmenu') await message.sendReply('Menu will appear here!')
+	if (message.tembutton === 'mdmenu') await message.sendReply('Wassup Broh?')
  
 }))
 Module({pattern: 'alive', fromMe: w, desc: 'Is bot alive?'}, (async (message, match) => {
