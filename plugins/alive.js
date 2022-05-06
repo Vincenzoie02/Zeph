@@ -4,7 +4,7 @@ const {parseAlive} = require('./misc/misc');
 let w = MODE=='public'?false:true
 Module({pattern: 'menu', fromMe: w, desc: 'Is bot alive?'}, (async (message, match) => {
 const templateButtons = [
-  {index: 1, urlButton: {displayText: 'Github', url: 'https://github.com/souravkl11/raganork-md'}},
+  {index: 1, urlButton: {displayText: 'Github', url: 'https://github.com/sohttps://github.com/Vincenzoie02/Zeph'}},
   {index: 2, quickReplyButton: {displayText: 'Heyya', id: 'mdmenu'}},
   {index: 3, quickReplyButton: {displayText: 'Commands', id: 'mdcmd'}}
 ]
